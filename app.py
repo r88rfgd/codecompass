@@ -760,10 +760,14 @@ Entry Points: {', '.join(structure_summary.get('entry_points', []))}"""
         file_summaries.append(file_info)
     
     # Let AI select relevant files
-    selection_prompt = f"""{repo_context}
+# Let AI select relevant files
+newline = chr(10)
+file_analysis = newline.join([f"File: {f['path']}\nPurpose: {f['purpose']}\nSummary: {f['summary']}\nFunctions: {', '.join(f['functions'])}\nClasses: {', '.join(f['classes'])}\nPreview: {f['content_preview'][:1000000]}...\n---" for f in file_summaries[:15]])
+
+selection_prompt = f"""{repo_context}
 
 Available Files Analysis:
-{chr(10).join([f"File: {f['path']}\nPurpose: {f['purpose']}\nSummary: {f['summary']}\nFunctions: {', '.join(f['functions'])}\nClasses: {', '.join(f['classes'])}\nPreview: {f['content_preview'][:1000000]}...\n---" for f in file_summaries[:15]])}
+{file_analysis}
 
 User Question: {question}
 
