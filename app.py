@@ -907,4 +907,4 @@ if __name__ == '__main__':
     print("🔥 Firebase initialized")
     print("🤖 OpenRouter LLM ready")
     print("🚀 Server running on http://localhost:5000")
-    app.run()
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
