@@ -4,28 +4,22 @@ CodeCompass is a web app that helps developers quickly understand unfamiliar cod
 
 ---
 
-## 🌐 Live Preview
-
-This app is designed to run locally. By default, the frontend points to `http://localhost:5000/`.
-
----
-
 ## ✨ Features
 
-- Ask AI questions about GitHub repositories
-- Google Sign-In via Firebase
-- Chat session history per user and repo
-- Usage limits
-- Clean, modern frontend with dark theme
+- Ask AI questions about GitHub repositories  
+- Google Sign-In via Firebase  
+- Chat session history per user and repo  
+- Usage limits  
+- Clean, modern frontend with dark theme  
 
 ---
 
 ## 🛠 Tech Stack
 
-- **Frontend**: HTML + JavaScript + Firebase
-- **Backend**: Python (Flask)
-- **Database/Auth**: Firebase Firestore + Firebase Authentication
-- **AI**: OpenRouter API (`deepseek-v3-base:free`)
+- **Frontend**: HTML + JavaScript + Firebase  
+- **Backend**: Python (Flask)  
+- **Database/Auth**: Firebase Firestore + Firebase Authentication  
+- **AI**: OpenRouter API (`deepseek-v3-base:free`)  
 
 ---
 
@@ -46,10 +40,10 @@ pip install flask flask-cors requests firebase-admin google-cloud-firestore uuid
 
 ### 3. Firebase Setup
 
-1. Go to [Firebase Console](https://console.firebase.google.com/) and create a project.
-2. Enable **Google Sign-In** under *Authentication → Sign-in method*.
-3. Enable **Firestore Database**.
-4. Create a **Web App** and get the Firebase config values.
+1. Go to [Firebase Console](https://console.firebase.google.com/) and create a project.  
+2. Enable **Google Sign-In** under *Authentication → Sign-in method*.  
+3. Enable **Firestore Database**.  
+4. Create a **Web App** and get the Firebase config values.  
 5. Generate a **Service Account Key**, download the JSON file, and rename it to:
 
 ```
@@ -119,16 +113,6 @@ Open the `index.html` file in any browser.
 
 ## 🧠 Troubleshooting
 
-- **CORS errors?** Make sure `Flask-CORS` is imported and `CORS(app)` is in `app.py`.
-- **Blank screen?** Check browser console for Firebase config issues.
-- **Repo fails to process?** Ensure the GitHub URL is public or use a PAT.
-
----
-
-## 📜 License
-
-MIT – Use it, build on it, share it.
-
----
-
-**Made with ❤️ to speed up your code exploration journey.**
+- **CORS errors?** Make sure `Flask-CORS` is imported and `CORS(app)` is in `app.py`.  
+- **Blank screen?** Check browser console for Firebase config issues.  
+- **Repo fails to process?** Ensure the GitHub URL is public or use a PAT.  
