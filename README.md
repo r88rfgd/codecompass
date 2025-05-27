@@ -14,6 +14,19 @@ CodeCompass is a web app that helps developers quickly understand unfamiliar cod
 
 ---
 
+
+## 📹 Demo Video
+
+
+
+https://github.com/user-attachments/assets/110d9f36-a7e0-45fc-a55c-1bf1aa65dc65
+
+
+
+*Note: I compressed the video quite a bit to keep the file size small — sorry about the quality! But I assure you, the UI looks great in actual usage.*
+
+---
+
 ## 🛠 Tech Stack
 
 - **Frontend**: HTML + JavaScript + Firebase  
