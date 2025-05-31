@@ -41,7 +41,7 @@ https://github.com/user-attachments/assets/110d9f36-a7e0-45fc-a55c-1bf1aa65dc65
 ### 1. Clone This Repo
 
 ```bash
-git clone https://github.com/your-username/codecompass.git
+git clone https://github.com/r88rfgd/codecompass.git
 cd codecompass
 ```
 
